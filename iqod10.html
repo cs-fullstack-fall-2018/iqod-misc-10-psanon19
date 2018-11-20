@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    var palindrome = prompt("Enter a word").toLocaleLowerCase();
+    var secondString = "";
+    var counter;
+
+    document.write(palindrome, "<br/>");
+    console.log(palindrome);
+    for(let x=0;x<palindrome.length;x++)
+    {
+        counter = ((palindrome.length-1)-x);
+        secondString += (palindrome[counter]);
+    }
+    document.write(secondString, "<br/>");
+    console.log(secondString);
+
+    if (secondString === palindrome)
+    {
+        document.write(palindrome," is a Palindrome.");
+        console.log(palindrome," is a Palindrome.");
+    }
+    else{
+        document.write(palindrome, " is not a Palindrome.");
+        console.log(palindrome, " is not a Palindrome.");
+    }
+</script>
+
+</body>
+</html>
